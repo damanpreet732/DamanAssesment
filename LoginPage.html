@@ -1,0 +1,49 @@
+<html> 
+<head> 	<title>	Groomers </title>
+	<style>
+		input
+		{
+			border : solid #66B2FF ;
+			border-radius: 15px ;
+			padding: 5px ;
+		}
+	</style>
+</head>
+<body style="background-color: rgba(153,255,255,0.3); background-size: 100% 100%;font-family:Trebuchet MS;">
+	<form action="" method="">
+		<div align="center">
+		<h1 style="color : #66B2FF ;"> Login to Groomers </h1>
+		<input id="name" type="text" placeholder="User Name or Email" required><br><br>
+		<input id="pass" type="Password" placeholder="Shh! Password" required>
+		</div>	
+		<br><br>
+		<a href="FrontPage.html"> << back </a>
+		<button onmouseover="b11()" onmouseout="b12()" onclick="fun()" id="b1" style="float:right;background-color : #66B2FF ;border : solid #66B2FF ;border-radius: 15px;font-size: 20px;font-family:Trebuchet MS;" type="submit"> Login </button>
+	</form>
+	<script type="text/javascript">
+		function b11()
+		{
+			document.getElementById('b1').style.backgroundColor = 'white';
+			document.getElementById('b1').style.color='#66B2FF';
+		}
+		function b12()
+		{
+			document.getElementById('b1').style.backgroundColor = '#66B2FF';
+			document.getElementById('b1').style.color='black';
+		}
+		function fun()
+		{
+			var p =document.getElementById('pass').value;
+			if(p.length<6)
+			{
+				alert("Password is incorrect");
+				return false;
+			}
+			else 
+			{
+				alert("Sorry! Site under progress");
+			}
+		}
+	</script>
+</body>
+</html>

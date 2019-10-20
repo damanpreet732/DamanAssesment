@@ -1,0 +1,41 @@
+<html>
+<head> 	<title> Groomers </title> </head>
+<body style="background-color: rgba(153,255,255,0.3); background-size: 100% 100%;">
+	<div align="center" style="position: relative; top:40%;transform: translateY(-40%);"> 
+	
+		<button onmouseover="b11()" onmouseout="b12()" id="b1" style="background-color : #66B2FF ;border : solid #66B2FF ; border-radius: 15px;height: 50px ; width: 150px;">
+			<a href="LoginPage.html" id="a1" style="text-decoration:none;font-family:Trebuchet MS;color:black;font-size: 20px;"> Login </a>
+		</button>	
+
+		<br><br>
+
+		<button onmouseover="b21()" onmouseout="b22()" id="b2" style="background-color : white ;color : #66B2FF ;border : solid #66B2FF ;border-radius: 15px;height: 50px ; width: 150px;">
+			<a href="SignUpPage.html" id="a2" style="text-decoration:none;font-family:Trebuchet MS;color : #66B2FF ;font-size: 20px;"> SignUp </a>
+		</button>
+
+	</div>
+	<script type="text/javascript">
+		function b11()
+		{
+			document.getElementById('b1').style.backgroundColor = 'white';
+			document.getElementById('a1').style.color='#66B2FF';
+		}
+		function b12()
+		{
+			document.getElementById('b1').style.backgroundColor = '#66B2FF';
+			document.getElementById('a1').style.color='black';
+		}
+		function b21()
+		{
+			document.getElementById('b2').style.backgroundColor = '#66B2FF';
+			document.getElementById('a2').style.color='black';
+		}
+		function b22()
+		{
+			document.getElementById('b2').style.backgroundColor = 'white';
+			document.getElementById('a2').style.color='#66B2FF';
+		}
+	</script> 
+	
+</body>
+</html>
